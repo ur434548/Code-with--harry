@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- logo + text -->
+      <div class="items items1">
+        <div class="logo">
+          <a href="">
+            <img
+              src="florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
+              alt="logo"
+              class="imge"
+            />
+          </a>
+          &ensp;
+          <div>
+            <span>Bento.</span>
+          </div>
+        </div>
+        <!-- navbar -->
+        <div>
+          <nav class="nav">
+            <ul style="margin-top: 5vh">
+              <li><i class="fa-solid fa-house"></i>Home</li>
+              <li><i class="fa-solid fa-user"></i>User</li>
+              <li><i class="fa-solid fa-image"></i>Gallery</li>
+              <li><i class="fa-solid fa-phone"></i>Phone</li>
+              <li><i class="fa-solid fa-address-book"></i>Contact Us</li>
+              <li><i class="fa-solid fa-file"></i>Files</li>
+              <li><i class="fa-solid fa-house"></i>Home</li>
+              <li><i class="fa-solid fa-phone"></i>Phone</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="items items2">
+        <div class="searchbar">
+          <div>
+            <input
+              type="search"
+              class="input"
+              style="width: 300px"
+              placeholder="Search here"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass"
+              id="sc"
+              style="margin-top: -5vh"
+            ></i>
+          </div>
+          <div style="margin-left: 12vh;">
+            <button value="Login" class="button">
+              <i class="fa-solid fa-circle-user"></i> &ensp;Login
+            </button>
+
+            <div>
+              <img src="images.jpg" alt="Person Pic" class="navpic2" />
+            </div>
+            <div class="icon">
+              <i
+                class="fa-solid fa-message"
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  margin-top: -5.5vh;
+                  margin-left: 124vh;
+                  font-size: x-large;
+                "
+              ></i>
+
+              <i
+                class="fa-solid fa-bell"
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  margin-top: -2.5vh;
+                  margin-left: 116vh;
+                  font-size: x-large;
+                "
+              >
+              </i>
+            </div>
+          </div>
+        </div>
+        <!-- body -->
+        <div class="bodyheading">
+          <div class="body body1">
+            <div class="heading">
+              <h1 style="margin-left: 5vh">All Courses</h1>
+              <div class="selection">
+                <i class="fa-solid fa-filter"></i>
+
+                <select id="selct">
+                  <option value="One">one</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                  <option value="four">four</option>
+                  <option value="five">five</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- images of body start -->
+            <div class="bodyimages">
+              <div style="background-color: #d9eeff" class="images">
+                <img
+                  src="man-editing-video-vector-removebg-preview.png"
+                  alt="pic"
+                  class="images1"
+                />
+                <br />
+                <p>Vedio Editing</p>
+                <br />
+                <pre
+                  style="color: rgb(172, 160, 160)"
+                >Something <b style="font-size: 1.7vh; color: black;">Super/Auto</b></pre>
+                <pre><i class="fa-regular fa-circle-right" style="margin-top: 0.5vh; margin-left: 18vh;"></i></pre>
+              </div>
+              <div style="background-color: #f3eef9" class="images">
+                <img
+                  src="minimal-pink-podium-and-scene-with-3d-render-in-abstract-abackground-composition-3d-illustration-mock-up-scene-geometry-shape-platform-forms-for-product-display-stage-for-product-in-modern-free-vector.png"
+                  alt="pic"
+                  class="images1"
+                />
+                <br />
+                <p>3D Rendering</p>
+                <br />
+                <pre
+                  style="color: rgb(172, 160, 160)"
+                >Something <b style="font-size: 1.7vh; color: black;">Super/Auto</b></pre>
+                <pre><i class="fa-regular fa-circle-right" style="margin-top: 0.5vh; margin-left: 18vh;"></i></pre>
+              </div>
+
+              <div style="background-color: #d7edff" class="images">
+                <img src="ppp-removebg-preview.png" alt="pic" class="images1" />
+                <br />
+                <p>Digital Marketing</p>
+                <br />
+                <pre
+                  style="color: rgb(172, 160, 160)"
+                >Something <b style="font-size: 1.7vh; color: black;">Super/Auto</b></pre>
+                <pre><i class="fa-regular fa-circle-right" style="margin-top: 0.5vh; margin-left: 18vh;"></i></pre>
+              </div>
+              <div style="background-color: #ffe5e6" class="images">
+                <img
+                  src="images__1_-removebg-preview.png"
+                  alt="pic"
+                  class="images1"
+                />
+                <br />
+                <p>Vedio Editing</p>
+                <br />
+                <pre
+                  style="color: rgb(172, 160, 160)"
+                >Something <b style="font-size: 1.7vh; color: black;">Super/Auto</b></pre>
+                <pre><i class="fa-regular fa-circle-right" style="margin-top: 0.5vh; margin-left: 18vh;"></i></pre>
+              </div>
+              <div style="background-color: #f2edf8" class="images">
+                <img src="jj-removebg-preview.png" alt="pic" class="images1" />
+                <br />
+                <p>Gaming</p>
+                <br />
+                <pre
+                  style="color: rgb(172, 160, 160)"
+                >Something <b style="font-size: 1.7vh; color: black;">Super/Auto</b></pre>
+                <pre><i class="fa-regular fa-circle-right" style="margin-top: 0.5vh; margin-left: 18vh;"></i></pre>
+              </div>
+              <div style="background-color: #d7edff" class="images">
+                <img src="hh-removebg-preview.png" alt="pic" class="images1" />
+                <br />
+                <p>3D Camera</p>
+                <br />
+                <pre
+                  style="color: rgb(172, 160, 160)"
+                >Something <b style="font-size: 1.7vh; color: black;">Super/Auto</b></pre>
+                <pre><i class="fa-regular fa-circle-right" style="margin-top: 0.5vh; margin-left: 18vh;"></i></pre>
+              </div>
+              <div style="background-color: #d6f7fbdd" class="images">
+                <img
+                  src="man-making-work-concept-in-front-of-computer-with-tutorial-free-vector-removebg-preview.png"
+                  alt="pic"
+                  class="images1"
+                />
+                <br />
+                <p>Networking</p>
+                <br />
+                <pre
+                  style="color: rgb(172, 160, 160)"
+                >Something <b style="font-size: 1.7vh; color: black;">Super/Auto</b></pre>
+                <pre><i class="fa-regular fa-circle-right" style="margin-top: 0.5vh; margin-left: 18vh;"></i></pre>
+              </div>
+              <div style="background-color: #ddb0c2dd" class="images">
+                <img src="tre.png" alt="pic" class="images1" />
+                <br />
+                <p>Vedio Gamming</p>
+                <br />
+                <pre
+                  style="color: rgb(172, 160, 160)"
+                >Something <b style="font-size: 1.7vh; color: black;">Super/Auto</b></pre>
+                <pre><i class="fa-regular fa-circle-right" style="margin-top: 0.5vh; margin-left: 18vh;"></i></pre>
+              </div>
+              <div style="background-color: #dbddd1" class="images">
+                <img src="man-making-work-concept-in-front-of-computer-with-tutorial-free-vector-removebg-preview.png" alt="pic" class="images1" />
+                <br />
+                <p>Programming</p>
+                <br />
+                <pre>Something <b>Super/Auto</b></pre>
+              </div>
+              <div style="background-color: #d6f7fbdd" class="images">
+                <img src="gjgjhg-removebg-preview.png" alt="pic" class="images1" />
+                <br />
+                <p>UI/UX Designer</p>
+                <br />
+                <pre>Something <b>Super/Auto</b></pre>
+              </div>
+              <div style="background-color: #ccc4d6" class="images">
+                <img src="opop-removebg-preview.png" alt="pic" class="images1" />
+                <br />
+                <p> Web Developer</p>
+                <br />
+                <pre>Something <b>Super/Auto</b></pre>
+              </div>
+              <div style="background-color: #dce7e1" class="images">
+                <img src="uuuuuu-removebg-preview.png" alt="pic" class="images1" />
+                <br />
+                <p>Software Engineer</p>
+                <br />
+                <pre>Something <b>Super/Auto</b></pre>
+              </div>
+            </div>
+            <!-- images of body end -->
+          </div>
+          <div class="sidediv">
+            <div class="one">
+              <div class="top">
+                <h3>Top Members</h3>
+                <h6 style="color: blueviolet">see all</h6>
+              </div>
+
+              <div class="o">
+                <img src="ttt.jpg" alt="pic" class="onepic" />
+                <span
+                  style="
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-top: 2.5vh;
+                    margin-right: 16vh;
+                  "
+                  >Author <br /><span
+                    style="
+                      font-size: 10px;
+                      margin-top: 0.1vh;
+                      margin-left: 0.3vh;
+                      color: grey;
+                    "
+                    >Top members</span
+                  ></span
+                >
+                <i
+                  class="fa-solid fa-ellipsis-vertical ;"
+                  style="margin-right: 1vh; margin-top: 3vh"
+                ></i>
+              </div>
+
+              <div class="o" style="margin-top: 2vh">
+                <img src="bbb.jpg" alt="pic" class="onepic" />
+                <span
+                  style="
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-top: 2.5vh;
+                    margin-right: 16vh;
+                  "
+                  >George Leo<br /><span
+                    style="
+                      font-size: 10px;
+                      margin-top: 0.1vh;
+                      margin-left: 0.3vh;
+                      color: grey;
+                    "
+                    >Top members</span
+                  ></span
+                >
+                <i
+                  class="fa-solid fa-ellipsis-vertical ;"
+                  style="margin-right: 1vh; margin-top: 3vh"
+                ></i>
+              </div>
+
+              <div class="o" style="margin-top: 2vh">
+                <img src="ggg.jpg" alt="pic" class="onepic" />
+                <span
+                  style="
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-top: 2.5vh;
+                    margin-right: 16vh;
+                  "
+                  >Gallagher<br /><span
+                    style="
+                      font-size: 10px;
+                      margin-top: 0.1vh;
+                      margin-left: 0.3vh;
+                      color: grey;
+                    "
+                    >Top members</span
+                  ></span
+                >
+                <i
+                  class="fa-solid fa-ellipsis-vertical ;"
+                  style="margin-right: 1vh; margin-top: 3vh"
+                ></i>
+              </div>
+            </div>
+
+            <!-- 2nd div side group members -->
+            <div class="side2">
+              <div class="top">
+                <h3>Group Members</h3>
+                <h6 style="color: blueviolet">see all</h6>
+              </div>
+              <div class="o">
+                <img src="www-removebg-preview.png" alt="pic" class="onepic" />
+                <span
+                  style="
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-top: 2.5vh;
+                    margin-right: 16vh;
+                  "
+                  >Woodcarver<br /><span
+                    style="
+                      font-size: 10px;
+                      margin-top: 0.1vh;
+                      margin-left: 0.3vh;
+                      color: grey;
+                    "
+                    >Top members</span
+                  ></span
+                >
+                <i
+                  class="fa-solid fa-ellipsis-vertical ;"
+                  style="margin-right: 1vh; margin-top: 3vh"
+                ></i>
+              </div>
+              <div class="o" style="margin-top: 2vh">
+                <img src="yyyy-removebg-preview.png" alt="pic" class="onepic" />
+                <span
+                  style="
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-top: 2.5vh;
+                    margin-right: 16vh;
+                  "
+                >
+                  Kalley<br /><span
+                    style="
+                      font-size: 10px;
+                      margin-top: 0.1vh;
+                      margin-left: 0.3vh;
+                      color: grey;
+                    "
+                    >Top members</span
+                  ></span
+                >
+                <i
+                  class="fa-solid fa-ellipsis-vertical ;"
+                  style="margin-right: 1vh; margin-top: 3vh"
+                ></i>
+              </div>
+              <div class="o"  id="anim" style="margin-top: 2vh">
+                <img src="rrr-removebg-preview.png" alt="pic" class="onepic" />
+                <span
+                  style="
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-top: 2.5vh;
+                    margin-right: 16vh;
+                  "
+                >
+                  Trickling <br /><span
+                    style="
+                      font-size: 10px;
+                      margin-top: 0.1vh;
+                      margin-left: 0.3vh;
+                      color: grey;
+                    "
+                    >Top members</span
+                  ></span
+                >
+                <i
+                  class="fa-solid fa-ellipsis-vertical ;"
+                  style="margin-right: 1vh; margin-top: 3vh"
+                ></i>
+              </div>
+              <div class="o" style="margin-top: 2vh">
+                <img src="istockphoto-1467446129-170x170-removebg-preview.png" alt="pic" class="onepic" />
+                <span
+                  style="
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-top: 2.5vh;
+                    margin-right: 16vh;
+                  "
+                >
+                  Guptil <br /><span
+                    style="
+                      font-size: 10px;
+                      margin-top: 0.1vh;
+                      margin-left: 0.3vh;
+                      color: grey;
+                    "
+                    >Top members</span
+                  ></span
+                >
+                <i
+                  class="fa-solid fa-ellipsis-vertical ;"
+                  style="margin-right: 1vh; margin-top: 3vh"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
